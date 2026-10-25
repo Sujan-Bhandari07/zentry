@@ -1,73 +1,114 @@
-# React + TypeScript + Vite
+<div align="center">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<img src="assets/logo.svg" alt="Zentry logo" width="320" />
 
-Currently, two official plugins are available:
+# Zentry
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**Enter the gaming universe.**
 
-## React Compiler
+An animated gaming website built for a beautiful, immersive UI with React and GSAP.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+<br />
 
-## Expanding the ESLint configuration
+![Status](https://img.shields.io/badge/status-live%20on%20Render-10B981?style=for-the-badge)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+<br />
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+[![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Zentry-46E3B7?style=for-the-badge&logo=render&logoColor=white)](https://zentry-t8in.onrender.com)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+<br />
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=flat-square&logo=render&logoColor=black)
+
+</div>
+
+---
+
+> [!TIP]
+> 🚀 **Live.** Zentry is deployed on Render: **[zentry-t8in.onrender.com](https://zentry-t8in.onrender.com)**
+>
+> On Render's free tier, the first load after inactivity may be slow while the service wakes up.
+
+## 📖 About
+
+Zentry is a gaming-themed website focused on visual polish. It uses GSAP to deliver smooth, motion-driven interactions on top of a React frontend.
+
+## ✨ Highlights
+
+| Highlight | Description |
+| --- | --- |
+| 🎮 **Gaming theme** | A website designed around a gaming brand and audience |
+| 🎞️ **GSAP animations** | Motion-driven UI built with GSAP |
+| ⚛️ **React components** | Modular, reusable UI built with React |
+
+<!-- VERIFY: add specific sections or effects that exist (hero, scroll animations, etc.), and confirm responsiveness before claiming it. -->
+
+## 🧰 Tech Stack
+
+| Layer | Technologies |
+| --- | --- |
+| **Frontend** | React |
+| **Animation** | GSAP |
+| **Hosting** | Render |
+
+<!-- VERIFY: add your build tool, styling approach, and any GSAP plugins (e.g. ScrollTrigger) if used. -->
+
+## 📁 Project Structure
+
+```text
+zentry/
+├── public/        # Static assets
+├── src/           # React components and styles
+├── assets/        # Logo for the README
+└── package.json
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+<!-- VERIFY: replace with the actual folder layout of the repository. -->
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🚀 Getting Started
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Prerequisites
+
+- Node.js and npm
+
+### Installation
+
+```bash
+git clone <your-repository-url>
+cd zentry
+npm install
 ```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+<!-- VERIFY: confirm the dev script name in package.json (it may be "start"). -->
+
+## 🚢 Deployment
+
+Zentry is deployed on [Render](https://render.com/) as a static site.
+
+1. Create a new **Static Site** on Render and connect this repository.
+2. Set the build command to `npm install && npm run build`.
+3. Set the publish directory to your build output folder.
+
+<!-- VERIFY: confirm the service type, build command, and publish directory (commonly "dist" or "build"). -->
+
+## 📄 License
+
+A license has not yet been specified for this project.
+
+<!-- VERIFY: if a LICENSE file exists in the repository, replace this section with its name and a link. -->
+
+---
+
+<div align="center">
+
+**Zentry** · Enter the gaming universe.
+
+</div>
